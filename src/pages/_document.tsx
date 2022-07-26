@@ -1,0 +1,50 @@
+import { MEDUSA_BACKEND_URL } from "@lib/config"
+import { GTM_ID } from "@lib/google/gtm"
+import Document, { Head, Html, Main, NextScript } from "next/document"
+
+class MyDocument extends Document {
+  render() {
+    const uri = MEDUSA_BACKEND_URL
+    const { hostname } = new URL(uri)
+
+    return (
+      <Html lang="en">
+        <Head>
+          <meta name="application-name" content={`//${hostname}`} />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="default"
+          />
+          <meta name="apple-mobile-web-app-title" content="Jamobrand" />
+          <meta
+            name="description"
+            content="Browse home decor products from wallpapers, decor items and accents, kitchenware and kitchen items, organization and storage products & more from Jamobrand Home"
+          />
+          <meta name="mobile-web-app-capable" content="yes" />
+          <link rel="preconnect" href={`//${hostname}`} crossOrigin="true" />
+          <link rel="dns-prefetch" href={`//${hostname}`} />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+            rel="stylesheet"
+          />
+          <meta name="theme-color" content="#634096" />
+        </Head>
+        <body>
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
+}
+
+export default MyDocument
