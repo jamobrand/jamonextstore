@@ -2,6 +2,7 @@ import { Cart } from "@medusajs/medusa"
 import Button from "@modules/common/components/button"
 import CartTotals from "@modules/common/components/cart-totals"
 import Link from "next/link"
+import { formatAmount } from "medusa-react"
 
 type SummaryProps = {
   cart: Omit<Cart, "refundable_amount" | "refunded_total">
@@ -14,6 +15,14 @@ declare global {
 }
 
 const Summary = ({ cart }: SummaryProps) => {
+  const getAmount = (amount: number | null | undefined) => {
+    return formatAmount({
+      amount: amount || 0,
+      region: cart.region,
+      includeTaxes: false,
+    })
+  }
+
   const beginCheckout = () => {
     // if (typeof window !== "undefined" || !item) {
     window.dataLayer = window.dataLayer || []
@@ -22,7 +31,7 @@ const Summary = ({ cart }: SummaryProps) => {
       event: "begin_checkout",
       ecommerce: {
         currency: "KES",
-        value: `${parseFloat(((cart.subtotal / 100) * 1 * 1).toFixed(2))}`,
+        value: `${getAmount(cart.subtotal)}`,
         items: [cart.items],
       },
     })
@@ -31,7 +40,7 @@ const Summary = ({ cart }: SummaryProps) => {
       products: {
         content_type: "product",
         content_ids: [`${cart.items.map((cart) => cart.variant.product_id)}`],
-        value: `${parseFloat(((cart.subtotal / 100) * 1 * 1).toFixed(2))}`,
+        value: `${getAmount(cart.subtotal)}`,
         currency: "KES",
         contents: [cart.items],
         num_items: `${cart.items.length}`,

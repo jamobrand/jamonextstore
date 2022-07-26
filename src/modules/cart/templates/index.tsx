@@ -7,6 +7,7 @@ import EmptyCartMessage from "../components/empty-cart-message"
 import SignInPrompt from "../components/sign-in-prompt"
 import ItemsTemplate from "./items"
 import Summary from "./summary"
+import { formatAmount } from "medusa-react"
 
 declare global {
   interface Window {
@@ -23,6 +24,14 @@ const CartTemplate = () => {
     return <SkeletonCartPage />
   }
 
+  const getAmount = (amount: number | null | undefined) => {
+    return formatAmount({
+      amount: amount || 0,
+      region: cart.region,
+      includeTaxes: false,
+    })
+  }
+
   if (typeof window !== "undefined" || !cart) {
     window.dataLayer = window.dataLayer || []
     window.dataLayer.push({ ecommerce: null })
@@ -30,7 +39,7 @@ const CartTemplate = () => {
       event: "view_cart",
       ecommerce: {
         currency: "KES",
-        value: `${parseFloat(((cart.subtotal / 100) * 1 * 1).toFixed(2))}`,
+        value: `${getAmount(cart.subtotal)}`,
         items: [cart.items],
       },
     })
