@@ -5,6 +5,7 @@ import { NextPageWithLayout } from "types/global"
 import { Disclosure } from "@headlessui/react"
 import { ChevronDownIcon } from "@heroicons/react/outline"
 
+// @ts-ignore
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
 }
