@@ -6,10 +6,12 @@ module.exports = withStoreConfig({
   reactStrictMode: true,
   images: {
     domains: [
-      "jamobrand-medusa.s3.ap-south-1.amazonaws.com",
-      "jamob-medusa.s3.ap-south-1.amazonaws.com",
-      "medusa-public-images.s3.eu-west-1.amazonaws.com",
-      "localhost",
+      // "jamobrand-medusa.s3.ap-south-1.amazonaws.com",
+      // "jamob-medusa.s3.ap-south-1.amazonaws.com",
+      // "medusa-public-images.s3.eu-west-1.amazonaws.com",
+      // "localhost",
+      " jamobrand-medusa.s3.ap-south-1.amazonaws.com",
+      "https://jamobrand.com",
     ],
   },
 })
