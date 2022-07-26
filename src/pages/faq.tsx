@@ -89,8 +89,8 @@ const Faq: NextPageWithLayout = () => {
                     </dt>
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
                       <p className="text-base text-gray-500">
-                        Call or Text on WhatsApp at 0746 381892 and we'll be
-                        able to help you.
+                        Call or Text on WhatsApp at 0746 381892 and we&lsquo;ll
+                        be able to help you.
                       </p>
                     </Disclosure.Panel>
                   </>
