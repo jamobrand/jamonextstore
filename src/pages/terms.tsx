@@ -229,8 +229,8 @@ const Terms: NextPageWithLayout = () => {
                         Policy. We have made every effort to display as
                         accurately as possible the colors and images of our
                         products that appear at the store. We cannot guarantee
-                        that your computer monitor's display of any color will
-                        be accurate. We reserve the right, but are not
+                        that your computer monitor&lsquo;s display of any color
+                        will be accurate. We reserve the right, but are not
                         obligated, to limit the sales of our products or
                         Services to any person, geographic region or
                         jurisdiction. We may exercise this right on a
@@ -324,8 +324,8 @@ const Terms: NextPageWithLayout = () => {
                         either with or without your knowledge. You may be held
                         liable for any losses incurred by JAMO BRAND, its
                         affiliates, officers, directors, employees, consultants,
-                        agents, and representatives due to someone else's use of
-                        your account or password.
+                        agents, and representatives due to someone else&lsquo;s
+                        use of your account or password.
                       </p>
                       <p className="text-base text-gray-500">
                         When you register with the Service or log in, you can do
@@ -455,20 +455,20 @@ const Terms: NextPageWithLayout = () => {
                         We may provide you with access to third-party tools over
                         which we neither monitor nor have any control nor input.
                         You acknowledge and agree that we provide access to such
-                        tools "as is" and "as available" without any warranties,
-                        representations or conditions of any kind and without
-                        any endorsement. We shall have no liability whatsoever
-                        arising from or relating to your use of optional
-                        third-party tools. Any use by you of optional tools
-                        offered through the site is entirely at your own risk
-                        and discretion and you should ensure that you are
-                        familiar with and approve of the terms on which tools
-                        are provided by the relevant third-party provider(s). We
-                        may also, in the future, offer new services and/or
-                        features through the website (including, the release of
-                        new tools and resources). Such new features and/or
-                        services shall also be subject to these Terms of
-                        Service.
+                        tools &#34;as is&#34; and &#34;as available&#34; without
+                        any warranties, representations or conditions of any
+                        kind and without any endorsement. We shall have no
+                        liability whatsoever arising from or relating to your
+                        use of optional third-party tools. Any use by you of
+                        optional tools offered through the site is entirely at
+                        your own risk and discretion and you should ensure that
+                        you are familiar with and approve of the terms on which
+                        tools are provided by the relevant third-party
+                        provider(s). We may also, in the future, offer new
+                        services and/or features through the website (including,
+                        the release of new tools and resources). Such new
+                        features and/or services shall also be subject to these
+                        Terms of Service.
                       </p>
                     </Disclosure.Panel>
                   </>
@@ -509,10 +509,10 @@ const Terms: NextPageWithLayout = () => {
                         or use of goods, services, resources, content, or any
                         other transactions made in connection with any
                         third-party websites. Please review carefully the
-                        third-party's policies and practices and make sure you
-                        understand them before you engage in any transaction.
-                        Complaints, claims, concerns, or questions regarding
-                        third-party products should be directed to the
+                        third-party&lsquo;s policies and practices and make sure
+                        you understand them before you engage in any
+                        transaction. Complaints, claims, concerns, or questions
+                        regarding third-party products should be directed to the
                         third-party.
                       </p>
                     </Disclosure.Panel>
@@ -546,32 +546,33 @@ const Terms: NextPageWithLayout = () => {
                         request from us you send creative ideas, suggestions,
                         proposals, plans, or other materials, whether online, by
                         email, by postal mail, or otherwise (collectively,
-                        'comments'), you agree that we may, at any time, without
-                        restriction, edit, copy, publish, distribute, translate
-                        and otherwise use in any medium any comments that you
-                        forward to us. We are and shall be under no obligation
-                        (1) to maintain any comments in confidence; (2) to pay
-                        compensation for any comments; or (3) to respond to any
-                        comments. We may, but have no obligation to, monitor,
-                        edit or remove content that we determine in our sole
-                        discretion are unlawful, offensive, threatening,
-                        libelous, defamatory, pornographic, obscene or otherwise
-                        objectionable or violates any party's intellectual
-                        property or these Terms of Service. You agree that your
-                        comments will not violate any right of any third-party,
-                        including copyright, trademark, privacy, personality or
-                        other personal or proprietary right. You further agree
-                        that your comments will not contain libelous or
-                        otherwise unlawful, abusive or obscene material, or
-                        contain any computer virus or other malware that could
-                        in any way affect the operation of the Service or any
-                        related website. You may not use a false e-mail address,
-                        pretend to be someone other than yourself, or otherwise
-                        mislead us or third-parties as to the origin of any
-                        comments. You are solely responsible for any comments
-                        you make and their accuracy. We take no responsibility
-                        and assume no liability for any comments posted by you
-                        or any third-party.
+                        &lsquo;comments&lsquo;), you agree that we may, at any
+                        time, without restriction, edit, copy, publish,
+                        distribute, translate and otherwise use in any medium
+                        any comments that you forward to us. We are and shall be
+                        under no obligation (1) to maintain any comments in
+                        confidence; (2) to pay compensation for any comments; or
+                        (3) to respond to any comments. We may, but have no
+                        obligation to, monitor, edit or remove content that we
+                        determine in our sole discretion are unlawful,
+                        offensive, threatening, libelous, defamatory,
+                        pornographic, obscene or otherwise objectionable or
+                        violates any party&lsquo;s intellectual property or
+                        these Terms of Service. You agree that your comments
+                        will not violate any right of any third-party, including
+                        copyright, trademark, privacy, personality or other
+                        personal or proprietary right. You further agree that
+                        your comments will not contain libelous or otherwise
+                        unlawful, abusive or obscene material, or contain any
+                        computer virus or other malware that could in any way
+                        affect the operation of the Service or any related
+                        website. You may not use a false e-mail address, pretend
+                        to be someone other than yourself, or otherwise mislead
+                        us or third-parties as to the origin of any comments.
+                        You are solely responsible for any comments you make and
+                        their accuracy. We take no responsibility and assume no
+                        liability for any comments posted by you or any
+                        third-party.
                       </p>
                     </Disclosure.Panel>
                   </>

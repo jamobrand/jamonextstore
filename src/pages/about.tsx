@@ -25,7 +25,7 @@ const About: NextPageWithLayout = () => {
               and lovely home.
             </p>
             <p className="text-lg-regular text-gray-700">
-              We're also a marketplace for home decor products such Arts,
+              We&apos;re also a marketplace for home decor products such Arts,
               Mirrors, Carpets and Rugs, Kitchen Utensils, Storage and
               Organization Items and much more.
             </p>
