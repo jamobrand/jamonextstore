@@ -59,9 +59,9 @@ const ShippingAddress = () => {
               touched={touchedFields}
             />
             <Input
-              label="Address"
+              label="Location"
               {...register("shipping_address.address_1", {
-                required: "Address is required",
+                required: "Location is required",
               })}
               autoComplete="address-line1"
               errors={errors}
@@ -76,7 +76,7 @@ const ShippingAddress = () => {
             />
             <div className="grid grid-cols-[122px_1fr] gap-x-2">
               <Input
-                label="Postal code"
+                label="Street Name"
                 {...register("shipping_address.postal_code", {
                   required: "Postal code is required",
                 })}

@@ -11,6 +11,7 @@ module.exports = withStoreConfig({
       // "medusa-public-images.s3.eu-west-1.amazonaws.com",
       "jamobrand-medusa.s3.ap-south-1.amazonaws.com",
       // "localhost",
+      "https://jamobrand.com",
     ],
   },
 })
