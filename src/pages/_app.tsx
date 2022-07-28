@@ -91,21 +91,6 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
         />
         <link rel="manifest" href="/manifest.json" />
       </Head>
-      {/* <Script
-        async
-        strategy="lazyOnload"
-        src={`https://jbclient.jamobrand.com/gtag/js?id=${GA_TRACKING_ID}`}
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_TRACKING_ID}', {
-            page_path: window.location.pathname,
-          });
-        `}
-      </Script> */}
       {/* Google Tag Manager - Global base code */}
       <Script
         id="gtag-base"

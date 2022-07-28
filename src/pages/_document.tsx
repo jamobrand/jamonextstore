@@ -5,7 +5,7 @@ import Document, { Head, Html, Main, NextScript } from "next/document"
 
 class MyDocument extends Document {
   render() {
-    const uri = MEDUSA_BACKEND_URL
+    const uri = process.env.NEXT_PUBLIC_VERCEL_URL || "https://jamobrand.com"
     const { hostname } = new URL(uri)
 
     return (
