@@ -11,7 +11,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="application-name" content={`//${hostname}`} />
+          <meta name="application-name" content="https://jamobrand.com" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
@@ -23,8 +23,12 @@ class MyDocument extends Document {
             content="Browse home decor products from wallpapers, decor items and accents, kitchenware and kitchen items, organization and storage products & more from Jamobrand Home"
           />
           <meta name="mobile-web-app-capable" content="yes" />
-          <link rel="preconnect" href={`//${hostname}`} crossOrigin="true" />
-          <link rel="dns-prefetch" href={`//${hostname}`} />
+          <link
+            rel="preconnect"
+            href="https://jamobrand.com"
+            crossOrigin="true"
+          />
+          <link rel="dns-prefetch" href="https://jamobrand.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
             rel="stylesheet"
