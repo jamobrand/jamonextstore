@@ -10,7 +10,7 @@ import "styles/globals.css"
 import { AppPropsWithLayout } from "types/global"
 import { useRouter } from "next/router"
 import { GTM_ID, pageview } from "@lib/google/gtm"
-import { GA_TRACKING_ID } from "@lib/google/analytics"
+// import { GA_TRACKING_ID } from "@lib/google/analytics"
 import { useEffect, FC } from "react"
 import * as gtag from "@lib/google/analytics"
 import { NextWebVitalsMetric } from "next/app"
@@ -91,6 +91,21 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
         />
         <link rel="manifest" href="/manifest.json" />
       </Head>
+      {/* <Script
+        async
+        strategy="lazyOnload"
+        src={`https://jbclient.jamobrand.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script> */}
       {/* Google Tag Manager - Global base code */}
       <Script
         id="gtag-base"
@@ -105,21 +120,7 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
           `,
         }}
       />
-      <Script
-        async
-        strategy="lazyOnload"
-        src={`https://jbclient.jamobrand.com/gtag/js?id=${GA_TRACKING_ID}`}
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_TRACKING_ID}', {
-            page_path: window.location.pathname,
-          });
-        `}
-      </Script>
+
       <MedusaProvider
         baseUrl={MEDUSA_BACKEND_URL}
         queryClientProviderProps={{

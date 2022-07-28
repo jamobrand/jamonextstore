@@ -1,4 +1,5 @@
 import { MEDUSA_BACKEND_URL } from "@lib/config"
+// import { GA_TRACKING_ID } from "@lib/google/analytics"
 import { GTM_ID } from "@lib/google/gtm"
 import Document, { Head, Html, Main, NextScript } from "next/document"
 
@@ -29,6 +30,22 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <meta name="theme-color" content="#634096" />
+          <script
+            async
+            src={`https://jbclient.jamobrand.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+          });
+        `,
+            }}
+          />
         </Head>
         <body>
           <noscript>
