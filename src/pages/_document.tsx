@@ -1,12 +1,11 @@
-import { MEDUSA_BACKEND_URL } from "@lib/config"
 // import { GA_TRACKING_ID } from "@lib/google/analytics"
 import { GTM_ID } from "@lib/google/gtm"
 import Document, { Head, Html, Main, NextScript } from "next/document"
 
 class MyDocument extends Document {
   render() {
-    const uri = process.env.NEXT_PUBLIC_VERCEL_URL || "https://jamobrand.com"
-    const { hostname } = new URL(uri)
+    // const uri = process.env.NEXT_PUBLIC_VERCEL_URL || "https://jamobrand.com"
+    // const { hostname } = new URL(uri)
 
     return (
       <Html lang="en">
