@@ -72,7 +72,7 @@ const ProductPage: NextPageWithLayout<PrefetchedPageProps> = ({ notFound }) => {
             google_business_vertical: "retail",
             item_id: `${data.id}`,
             item_category: `${data.collection.title}`,
-            item_category2: `${data.type.value}`,
+            // item_category2: `${data.type.value || ""}`,
             item_name: `${data.title}`,
             currency: "KES",
             price: `${parseFloat(
