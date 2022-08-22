@@ -36,6 +36,10 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
 
       <p className="text-base-regular">{product.description}</p>
 
+      <h4 className="text-lg-regular text-red-700 mt-2 mb-4">
+        You can also order through our WhatsApp at 0746381892
+      </h4>
+
       {product.variants.length > 1 && (
         <div className="my-8 flex flex-col gap-y-6">
           {product.options.map((option) => {
@@ -55,7 +59,7 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
 
       <div className="mb-4">
         {selectedPrice ? (
-          <div className="flex flex-col text-gray-700">
+          <div className="flex flex-col text-green-700">
             <span
               className={clsx("text-xl-semi", {
                 "text-rose-600": selectedPrice.price_type === "sale",
